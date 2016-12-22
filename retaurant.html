@@ -60,7 +60,11 @@
 					data.painter(data.restaurant);
 				}
 			}, false);
-
+			
+			document.forms[0].elements[0].addEventListener("focusin", function(){
+				event.target.value = "";
+			}, false);
+			
 		}
 		
 		init();
