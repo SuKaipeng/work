@@ -39,7 +39,7 @@
 			document.forms[0].addEventListener("click", function(){
 				if (event.target.name.toLowerCase() == "add"){
 					var input = document.forms[0].elements[0].value;
-					if (/[\u4e00-\u9fa5a-zA-Z]+/i.test(input)){
+					if (/[\u4e00-\u9fa5a-zA-Z]+/i.test(input) && input !== "输入中文或英文"){
 						data.restaurant.push(input);
 						data.painter(data.restaurant);
 					} else {
