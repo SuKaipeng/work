@@ -65,6 +65,9 @@
 				event.target.value = "";
 			}, false);
 			
+			document.forms[0].elements[0].addEventListener("focusout", function(){
+				event.target.value = "输入中文或英文";
+			}, false);
 		}
 		
 		init();
